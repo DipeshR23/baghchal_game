@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #f97316;
+  --color-brand-gold: #fbbf24;
+  --color-wood-dark: #3a2212;
+  --color-wood-light: #e6b89c;
+}
+
+/* Custom Base Styles */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #020617; /* slate-950 */
+  color: #f8fafc; /* slate-50 */
+  font-family: 'Outfit', 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility classes */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(251, 191, 36, 0.15);
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.05);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1329;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Pulsing effect for active turn indicators */
+@keyframes turn-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px 6px rgba(249, 115, 22, 0.2);
+  }
+}
+
+.pulse-turn-tiger {
+  animation: turn-pulse 2s infinite ease-in-out;
+}
+
+@keyframes turn-pulse-goat {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(148, 163, 184, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px 6px rgba(148, 163, 184, 0.2);
+  }
+}
+
+.pulse-turn-goat {
+  animation: turn-pulse-goat 2s infinite ease-in-out;
+}
+
+/* Wooden Board SVG styling */
+.wood-board-line {
+  stroke: #1b0f05;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0px 1px 1px rgba(255, 255, 255, 0.07));
+}
+
+.wood-board-line-diagonal {
+  stroke: #1f1207;
+  stroke-width: 2.5;
+  stroke-dasharray: none;
+}
+
+.wood-board-outer-border {
+  stroke: #1b0f05;
+  stroke-width: 6;
+  fill: none;
+}
+
+/* Modern Board SVG styling */
+.modern-board-line {
+  stroke: #334155; /* slate-700 */
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.8;
+}
+
+.modern-board-line-diagonal {
+  stroke: #475569; /* slate-600 */
+  stroke-width: 2;
+  opacity: 0.6;
+}
+
+.modern-board-outer-border {
+  stroke: #64748b; /* slate-500 */
+  stroke-width: 4;
+  fill: none;
+  opacity: 0.9;
+}

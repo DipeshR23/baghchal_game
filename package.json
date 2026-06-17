@@ -1,0 +1,22 @@
+{
+  "name": "baghchal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Baghchal — The traditional Nepali board game, reimagined for the web",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=packages/client",
+    "dev:server": "npm run dev --workspace=packages/server",
+    "build": "npm run build --workspace=packages/shared && npm run build --workspace=packages/client",
+    "build:shared": "npm run build --workspace=packages/shared",
+    "build:client": "npm run build --workspace=packages/client",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "clean": "rimraf packages/*/dist packages/*/node_modules node_modules"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
