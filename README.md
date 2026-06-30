@@ -168,7 +168,7 @@ Passionate about Software Development, Networking, Cloud Computing, DevOps, and 
 
 GitHub: https://github.com/DipeshR23
 
-LinkedIn: https://www.linkedin.com/in/dipeshrijal47
+LinkedIn: https://www.linkedin.com/in/dipeshrijal45
 
 ---
 
