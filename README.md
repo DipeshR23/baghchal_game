@@ -1,4 +1,4 @@
-# 🐅 Baghchal – Traditional Nepali Strategy Game
+# 🐅 Baghchal: Traditional Nepali Strategy Game
 
 > A modern web-based implementation of Nepal's iconic board game **Baghchal (Tiger and Goats)**, built with React, TypeScript, and Vite.
 
